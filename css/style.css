@@ -3,16 +3,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: white;
 }
 
-/* ---- Estilos para el Encabezado (Header) ---- */
+/***---------------------------------------------------------------- */
+/***  HEADER AREA */
+/***---------------------------------------------------------------- */
+
 .header-container {
-    background-color: #0d2c6c; /* El color del fondo */
+    background-color: #0d2c6c; 
     color: white;
 }
 
 .top-bar {
-    background-color: #f7a01d; /* Color mostaza */
+    background-color: #f7a01d; 
     color: white;
     text-align: center;
     padding: 10px;
@@ -24,11 +28,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: white; 
 }
 
 .header-nav {
-    /* La navegación queda en la primera columna */
     grid-column: 1;
 }
 
@@ -42,15 +45,14 @@ body {
 
 .header-nav a {
     text-decoration: none;
-    color: #0d2c6c; /* Texto color azul */
+    color: #0d2c6c; 
     font-weight: bold;
 }
 
 .social-icons {
-    /* Los íconos de redes sociales van en la tercera columna */
     grid-column: 3;
     display: flex;
-    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    justify-content: flex-end; 
     gap: 15px;
 }
 
@@ -60,7 +62,7 @@ body {
 }
 
 .social-icons img {
-    height: 24px; /* Ajusta este valor al tamaño que desees para los íconos */
+    height: 24px; 
     width: auto;
 }
 
@@ -69,33 +71,32 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 20px 50px;
+    font-weight: 100;
     
-    /* Reemplazamos el color de fondo por una imagen */
     background-image: url('../assets/images/backgrounds/header-background.png');
-    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .logo-area {
-    /* Quitamos el borde temporal */
-    /* border: 2px dashed #fff; */ 
-    width: 150px; /* Ancho deseado para el logo */
-    height: 150px; /* Altura deseada para el logo */
-    display: flex; /* Usamos flexbox para centrar la imagen */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    margin-right: 30px; /* Mantener el espacio a la derecha del logo */
+    width: 150px; 
+    height: 150px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 30px; 
 }
 
 .logo-area img {
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
-    max-height: 100%; /* Asegura que la imagen no se salga del contenedor */
-    object-fit: contain; /* Escala la imagen para que quepa sin recortarse */
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
 }
 
 .title-area h1 {
     font-size: 2.5em;
+    font-weight: 650;
     margin: 0;
     text-align: center;
 }
@@ -105,3 +106,150 @@ body {
     margin: 0;
     text-align: center;
 }
+
+/***---------------------------------------------------------------- */
+/* ** SEMBLANZA  */
+/***---------------------------------------------------------------- */
+
+#semblanza {
+    padding: 60px 50px; 
+    background-color: #ffffff; 
+}
+
+#semblanza h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #0d2c6c;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.semblanza-text p.small-slogan{
+    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+    color: #505050;
+    text-align: center;
+}
+
+.semblanza-text p.intro-text {
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: large;
+}
+
+.semblanza-photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.semblanza-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; 
+}
+
+.semblanza-photo::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7a01d; 
+    z-index: 1; 
+}
+
+@media (max-width: 768px) {
+    .semblanza-container {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+}
+
+.semblanza-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10vw; 
+    align-items: center;
+}
+
+.semblanza-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #0d2c6c; 
+    display: inline-block; 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    margin-top: 40px;
+}
+
+.sub-sections h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sub-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bubbles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espacio entre cada burbuja */
+    flex-wrap: wrap; /* Permite que las burbujas pasen a la siguiente línea en pantallas pequeñas */
+}
+
+.bubble-item {
+    background-color: #f0f4f7; /* Un color de fondo suave para las burbujas */
+    border-radius: 15px; /* Bordes redondeados para la burbuja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto 3D */
+    padding: 30px;
+    text-align: center;
+    flex: 1; /* Permite que cada burbuja ocupe un espacio equitativo */
+    min-width: 250px; /* Tamaño mínimo para evitar que se aplasten */
+}
+
+.bubble-icon {
+    font-size: 3em;
+    color: #0d2c6c; /* Color azul para los íconos */
+    margin-bottom: 15px;
+}
+
+.bubble-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0d2c6c;
+}
+
+.bubble-item p {
+    line-height: 1.5;
+    text-align: justify; /* Justificamos el texto de las burbujas */
+}
+
