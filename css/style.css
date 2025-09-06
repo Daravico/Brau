@@ -1,0 +1,104 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- Estilos para el Encabezado (Header) ---- */
+.header-container {
+    background-color: #0d2c6c; /* El color del fondo */
+    color: white;
+}
+
+.top-bar {
+    background-color: #f7a01d; /* Color mostaza */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.header-nav {
+    /* La navegación queda en la primera columna */
+    grid-column: 1;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #0d2c6c; /* Texto color azul */
+    font-weight: bold;
+}
+
+.social-icons {
+    /* Los íconos de redes sociales van en la tercera columna */
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons img {
+    height: 24px; /* Ajusta este valor al tamaño que desees para los íconos */
+    width: auto;
+}
+
+.header-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alineamos a la izquierda */
+    padding: 20px 50px;
+    background-image: url('assets/img/fondo-patron.png'); /* Puedes usar una imagen de fondo aquí */
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-area {
+    /* Quitamos el borde temporal */
+    /* border: 2px dashed #fff; */ 
+    width: 150px; /* Ancho deseado para el logo */
+    height: 150px; /* Altura deseada para el logo */
+    display: flex; /* Usamos flexbox para centrar la imagen */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    margin-right: 30px; /* Mantener el espacio a la derecha del logo */
+}
+
+.logo-area img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se salga del contenedor */
+    object-fit: contain; /* Escala la imagen para que quepa sin recortarse */
+}
+
+.title-area h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.title-area p {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
