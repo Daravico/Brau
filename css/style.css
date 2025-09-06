@@ -67,11 +67,14 @@ body {
 .header-bottom-row {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alineamos a la izquierda */
+    justify-content: flex-start;
     padding: 20px 50px;
-    background-image: url('assets/img/fondo-patron.png'); /* Puedes usar una imagen de fondo aquí */
-    background-size: cover;
-    background-position: center;
+    
+    /* Reemplazamos el color de fondo por una imagen */
+    background-image: url('../assets/images/backgrounds/header-background.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .logo-area {
