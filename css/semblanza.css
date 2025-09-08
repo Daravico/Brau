@@ -7,6 +7,23 @@
 /* ** TEXTOS INTRODUCTORIOS */
 /* ** ----------------------------------------- */
 
+
+/*---------------------------------------------------------------- */
+/* SEMBLANZA - SECCIÓN INTRODUCCIÓN */
+/*---------------------------------------------------------------- */
+
+.intro-semblanza-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.semblanza-text {
+    flex: 2;
+}
+
 .semblanza-text p.small-slogan {
     font-style: italic;
     font-size: 3rem;
@@ -22,12 +39,10 @@
     font-size: large;
 }
 
-/* ** FOTOGRAFÍA */
-/* ** ----------------------------------------- */
-
 .semblanza-photo {
+    flex: 1;
     position: relative;
-    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -50,18 +65,42 @@
     z-index: 1;
 }
 
-@media (max-width: 768px) {
-    .semblanza-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
+/*---------------------------------------------------------------- */
+/* MEDIA QUERIES PARA RESPONSIVIDAD */
+/*---------------------------------------------------------------- */
 
-.semblanza-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10vw;
-    align-items: center;
+@media (max-width: 768px) {
+    .intro-semblanza-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .semblanza-text {
+        order: 1;
+        flex: auto;
+    }
+    
+    .semblanza-photo {
+        order: 2;
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+        flex: none;
+    }
+    
+    .semblanza-text p.small-slogan {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .semblanza-text p.intro-text {
+        text-align: justify;
+    }
+    
+    .semblanza-photo::before {
+        top: -10px;
+        right: -10px;
+    }
 }
 
 /* ** TÍTULOS */
@@ -122,8 +161,8 @@
 
 .section-image {
     flex: 1;
-    height: 300px; 
-    background-color: #e0e0e0; 
+    height: 300px;
+    background-color: #e0e0e0;
     border-radius: 10px;
 }
 
@@ -135,10 +174,12 @@
 }
 
 @media (max-width: 768px) {
+
     .section-item,
-    .section-item.reverse { 
+    .section-item.reverse {
         flex-direction: column;
     }
+
     .section-image {
         width: 100%;
         margin-bottom: 20px;
@@ -151,7 +192,7 @@
 .docencia-items-container {
     display: flex;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
     flex-wrap: wrap;
     padding: 20px;
     background-color: #f7a01d;
@@ -161,8 +202,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; 
-    max-width: 30%; 
+    flex: 1;
+    max-width: 30%;
     text-align: center;
     text-align: justify;
 }
@@ -170,7 +211,7 @@
 .docencia-image-box {
     width: 100%;
     height: 200px;
-    background-color: #d3d3d3; 
+    background-color: #d3d3d3;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -178,8 +219,8 @@
 .docencia-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    border-radius: 5px; 
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -188,7 +229,7 @@
         gap: 20px;
     }
 
-    .docencia-item{
+    .docencia-item {
         max-width: 100%;
         width: 100%;
     }
@@ -207,18 +248,18 @@
 }
 
 .produccion-text {
-    flex: 2; 
+    flex: 2;
 }
 
 .produccion-text ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     text-align: justify;
 }
 
 .produccion-text li {
     padding-left: 1em;
-    text-indent: -1em; 
+    text-indent: -1em;
     line-height: 1.5;
     margin-bottom: 10px;
 }
@@ -233,9 +274,9 @@
 
 .produccion-button-container {
     flex: 1;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scholar-button {
@@ -246,19 +287,19 @@
     font-size: 1.5em;
     font-weight: bold;
     padding: 20px 30px;
-    border-radius: 50px; 
+    border-radius: 50px;
     display: inline-block;
     line-height: 1.2;
     transition: background-color 0.3s ease;
     width: 50%;
 }
 
-.Google{
-    color:#f7a01d
+.Google {
+    color: #f7a01d
 }
 
 .scholar-button:hover {
-    background-color: #081d4a; 
+    background-color: #081d4a;
 }
 
 @media (max-width: 768px) {
@@ -266,7 +307,8 @@
         flex-direction: column;
         gap: 20px;
     }
-    .scholar-button{
+
+    .scholar-button {
         width: 100%;
         align-items: center;
     }
@@ -277,17 +319,17 @@
 
 .legado-container {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
     margin-bottom: 60px;
-    text-align: center; 
+    text-align: center;
 }
 
 .carousel-container {
-    width: 70%; 
-    max-width: 800px; 
-    overflow: hidden; 
+    width: 70%;
+    max-width: 800px;
+    overflow: hidden;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -295,13 +337,13 @@
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
     width: 100%;
     height: auto;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     border-radius: 10px;
 }
 
@@ -330,12 +372,12 @@
 .legado-text {
     font-size: 1.1em;
     line-height: 1.7;
-    max-width: 800px; 
+    max-width: 800px;
     text-align: justify;
 }
 
 @media (max-width: 768px) {
     .carousel-container {
-        width: 95%; 
+        width: 95%;
     }
 }

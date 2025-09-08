@@ -11,8 +11,7 @@
     color: white;
     margin-bottom: 40px;
     border-bottom: 3px solid white;
-    /* width: 50%; */
-    /* padding-left: 100px; */
+
 }
 
 .plan-de-trabajo-acordeon {
@@ -24,7 +23,7 @@
 .accordion-button {
     background-color: #f7a01d;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.7rem;
     font-weight: bold;
     padding: 20px 30px;
     border: none;
