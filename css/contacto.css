@@ -5,48 +5,41 @@
 #contacto {
     padding: 60px 50px;
     background-color: #f0f4f7;
-    text-align: center; /* Centra todo el contenido */
+    text-align: center; 
 }
 
-#contacto h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 3px solid #0d2c6c;
-    width: 250px;
-    margin: 0 auto 40px auto;
-}
 
 .contacto-single-column {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Espacio entre las dos secciones */
+    gap: 50px; 
 }
 
 .contact-email h3,
 .contact-social h3 {
     color: #0d2c6c;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
 .email-link {
-    display: inline-block;
-    color: #f7a01d; /* Color mostaza para el enlace */
-    font-size: 1.2em;
+    display: block; 
+    color: #f7a01d; 
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     margin-top: 10px;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .email-link:hover {
-    color: #d88e14; /* Color más oscuro al pasar el cursor */
+    color: #d88e14; 
 }
 
 .social-icons-contact {
     display: flex;
-    justify-content: center; /* Centra los íconos */
+    justify-content: center; 
     gap: 20px;
     margin-top: 20px;
 }
