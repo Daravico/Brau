@@ -62,20 +62,21 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 10%;
+    padding: 20px 50px;
     font-weight: 100;
+
     background-image: url('../assets/images/backgrounds/header-background.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo-area {
-    width: 150px; 
-    height: 150px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     flex-shrink: 0;
 }
@@ -87,14 +88,50 @@
 }
 
 .title-area h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-weight: 650;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .title-area p {
     font-size: 1.5em;
     margin: 0;
-    text-align: center;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .header-top-row,
+    .header-bottom-row {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header-nav ul,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .header-nav{
+        margin-bottom: 20px;
+    }
+
+    .title-area h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .title-area p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .logo-area {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+        margin-top: 20px;
+        
+    }
 }

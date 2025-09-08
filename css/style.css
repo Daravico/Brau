@@ -9,13 +9,9 @@ body {
 h2 {
     font-size: 2.5em;
     font-weight: bold;
-
-    width: 25%; 
-    text-align: center;
-    margin: 0 auto 50px auto;
-    
     color: #333;
     border-bottom: 3px solid #0d2c6c;
-    
-
+    width: 250px; 
+    margin: 0 auto 50px auto;
+    text-align: center;
 }
