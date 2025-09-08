@@ -3,15 +3,6 @@
     background-color: #f0f4f7; /* Un fondo gris claro para la sección */
 }
 
-#contacto h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 3px solid #0d2c6c;
-    width: 250px; /* Ancho para el subrayado del título */
-    margin: 0 auto 40px auto;
-    text-align: center;
-}
 
 .contacto-container {
     display: grid;

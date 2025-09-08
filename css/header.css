@@ -62,22 +62,22 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 50px;
+    padding: 20px 10%;
     font-weight: 100;
-
     background-image: url('../assets/images/backgrounds/header-background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .logo-area {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+    width: 150px; 
+    height: 150px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .logo-area img {

@@ -3,27 +3,16 @@
     background-color: #ffffff;
 }
 
-#semblanza h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 3px solid #0d2c6c;
-    /* Las siguientes líneas son la clave del cambio */
-    width: 250px;
-    /* Ajusta este valor para controlar el largo del subrayado */
-    margin: 0 auto 50px auto;
-    /* Centra el título y le da un margen inferior */
-    text-align: center;
-    /* Centra el texto dentro del h2 */
-    /* text-transform: uppercase; */
-}
+
+/* ** TEXTOS INTRODUCTORIOS */
+/* ** ----------------------------------------- */
 
 .semblanza-text p.small-slogan {
     font-style: italic;
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: bold;
     color: #505050;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .semblanza-text p.intro-text {
@@ -32,6 +21,9 @@
     text-align: justify;
     font-size: large;
 }
+
+/* ** FOTOGRAFÍA */
+/* ** ----------------------------------------- */
 
 .semblanza-photo {
     position: relative;
@@ -72,15 +64,8 @@
     align-items: center;
 }
 
-.semblanza-text h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 3px solid #0d2c6c;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
+/* ** TÍTULOS */
+/* ** ----------------------------------------- */
 
 .sub-section {
     margin-top: 40px;
@@ -90,58 +75,274 @@
     font-size: 1.5em;
     color: #333;
     margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.sub-section h3 {
-    font-size: 1.5em;
-    color: #333;
     margin-bottom: 20px;
 }
 
+/* ** TRAYECTORIA */
+/* ** ----------------------------------------- */
 
+.sub-section h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+.sub-section h4 {
+    color: #0d2c6c;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-.bubbles-container {
+.section-item {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
 }
 
-.bubble-item {
-    background-color: #f0f4f7;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
+.section-item-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.section-text {
     flex: 1;
-    min-width: 250px;
+    line-height: 1.6;
 }
 
-.bubble-icon {
-    font-size: 3em;
-    color: #0d2c6c;
-    margin-bottom: 15px;
-}
-
-.bubble-item h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #0d2c6c;
-}
-
-.bubble-item p {
-    line-height: 1.5;
+.section-text p {
     text-align: justify;
-    /* Justificamos el texto de las burbujas */
+}
+
+.section-image {
+    flex: 1;
+    height: 300px; 
+    background-color: #e0e0e0; 
+    border-radius: 10px;
+}
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .section-item {
+        flex-direction: column;
+    }
+    .section-item-reverse {
+        flex-direction: column;
+    }
+    .section-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ** LABOR DOCENTE */
+/* ** ----------------------------------------- */
+
+.docencia-items-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f7a01d;
+}
+
+.docencia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; 
+    max-width: 30%; 
+    text-align: center;
+}
+
+.docencia-image-box {
+    width: 100%;
+    height: 200px;
+    background-color: #d3d3d3; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.docencia-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .docencia-items-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .docencia-item{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* ** PRODUCCIÓN CIENTÍFICA */
+/* ** ----------------------------------------- */
+
+
+.produccion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.produccion-text {
+    flex: 2; /* El texto ocupará más espacio */
+}
+
+.produccion-text ul {
+    list-style-type: none; /* Elimina las viñetas por defecto */
+    padding: 0;
+    text-align: justify;
+}
+
+.produccion-text li {
+    padding-left: 1em;
+    text-indent: -1em; /* Indenta el texto para la viñeta */
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.produccion-text li::before {
+    content: "\2022"; /* Símbolo de la viñeta */
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+.produccion-button-container {
+    flex: 1;
+    display: flex; /* Convierte el contenedor del botón en un flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.scholar-button {
+    background-color: #0d2c6c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 50px; 
+    display: inline-block;
+    line-height: 1.2;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.Google{
+    color:#f7a01d
+}
+
+.scholar-button:hover {
+    background-color: #081d4a; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .produccion-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .scholar-button{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* ** RECONOCIMIENTO Y LEGADO */
+/* ** ----------------------------------------- */
+
+.legado-container {
+    display: flex;
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: center; /* Centra el texto del párrafo */
+}
+
+.carousel-container {
+    width: 70%; /* Ajusta el ancho del carrusel */
+    max-width: 800px; /* Ancho máximo para el carrusel */
+    overflow: hidden; /* Oculta las imágenes que no están visibles */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animación de desplazamiento */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0; /* Asegura que las imágenes no se encojan */
+    border-radius: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}
+
+.legado-text {
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 800px; 
+    text-align: justify;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 95%; /* Más ancho en móviles */
+    }
 }
