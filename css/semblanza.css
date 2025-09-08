@@ -105,12 +105,8 @@
     margin-bottom: 60px;
 }
 
-.section-item-reverse {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
+.section-item.reverse {
+    flex-direction: row-reverse;
 }
 
 .section-text {
@@ -136,12 +132,9 @@
     border-radius: 5px;
 }
 
-/* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
-    .section-item {
-        flex-direction: column;
-    }
-    .section-item-reverse {
+    .section-item,
+    .section-item.reverse { 
         flex-direction: column;
     }
     .section-image {
@@ -186,7 +179,6 @@
     border-radius: 5px; 
 }
 
-/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .docencia-items-container {
         flex-direction: column;
@@ -212,24 +204,24 @@
 }
 
 .produccion-text {
-    flex: 2; /* El texto ocupará más espacio */
+    flex: 2; 
 }
 
 .produccion-text ul {
-    list-style-type: none; /* Elimina las viñetas por defecto */
+    list-style-type: none; 
     padding: 0;
     text-align: justify;
 }
 
 .produccion-text li {
     padding-left: 1em;
-    text-indent: -1em; /* Indenta el texto para la viñeta */
+    text-indent: -1em; 
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
 .produccion-text li::before {
-    content: "\2022"; /* Símbolo de la viñeta */
+    content: "\2022";
     color: #333;
     font-weight: bold;
     display: inline-block;
@@ -238,9 +230,9 @@
 
 .produccion-button-container {
     flex: 1;
-    display: flex; /* Convierte el contenedor del botón en un flexbox */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .scholar-button {
@@ -266,7 +258,6 @@
     background-color: #081d4a; 
 }
 
-/* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
     .produccion-container {
         flex-direction: column;
@@ -283,17 +274,17 @@
 
 .legado-container {
     display: flex;
-    flex-direction: column; /* Apila la imagen y el texto verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     gap: 30px;
     margin-bottom: 60px;
-    text-align: center; /* Centra el texto del párrafo */
+    text-align: center; 
 }
 
 .carousel-container {
-    width: 70%; /* Ajusta el ancho del carrusel */
-    max-width: 800px; /* Ancho máximo para el carrusel */
-    overflow: hidden; /* Oculta las imágenes que no están visibles */
+    width: 70%; 
+    max-width: 800px; 
+    overflow: hidden; 
     position: relative;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -301,13 +292,13 @@
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Animación de desplazamiento */
+    transition: transform 0.5s ease-in-out; 
 }
 
 .carousel-slide img {
     width: 100%;
     height: auto;
-    flex-shrink: 0; /* Asegura que las imágenes no se encojan */
+    flex-shrink: 0; 
     border-radius: 10px;
 }
 
@@ -323,7 +314,7 @@
 .carousel-dot {
     width: 12px;
     height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(85, 85, 85, 0.5);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -340,9 +331,8 @@
     text-align: justify;
 }
 
-/* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
     .carousel-container {
-        width: 95%; /* Más ancho en móviles */
+        width: 95%; 
     }
 }
