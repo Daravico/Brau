@@ -1,0 +1,147 @@
+#semblanza {
+    padding: 50px 50px;
+    background-color: #ffffff;
+}
+
+#semblanza h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #0d2c6c;
+    /* Las siguientes líneas son la clave del cambio */
+    width: 250px;
+    /* Ajusta este valor para controlar el largo del subrayado */
+    margin: 0 auto 50px auto;
+    /* Centra el título y le da un margen inferior */
+    text-align: center;
+    /* Centra el texto dentro del h2 */
+    /* text-transform: uppercase; */
+}
+
+.semblanza-text p.small-slogan {
+    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+    color: #505050;
+    /* text-align: center; */
+}
+
+.semblanza-text p.intro-text {
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: large;
+}
+
+.semblanza-photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.semblanza-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.semblanza-photo::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7a01d;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .semblanza-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.semblanza-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10vw;
+    align-items: center;
+}
+
+.semblanza-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #0d2c6c;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    margin-top: 40px;
+}
+
+.sub-sections h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sub-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bubbles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bubble-item {
+    background-color: #f0f4f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.bubble-icon {
+    font-size: 3em;
+    color: #0d2c6c;
+    margin-bottom: 15px;
+}
+
+.bubble-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0d2c6c;
+}
+
+.bubble-item p {
+    line-height: 1.5;
+    text-align: justify;
+    /* Justificamos el texto de las burbujas */
+}
