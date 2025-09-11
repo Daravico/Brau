@@ -41,21 +41,48 @@
     font-weight: bold;
 }
 
+.header-nav li{
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.header-nav li:hover{
+    transform: scale(1.05);
+}
+
+
 .social-icons {
     grid-column: 3;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icons:hover{
+    transform: scale(1.05);
 }
 
 .social-icons a {
     color: white;
     font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons img {
     height: 24px;
     width: auto;
+    margin-right: 10px;
+}
+
+.social-icons p{
+    color: #0d2c6c;
+    font-weight: bold;
+    font-size: 75%;
+    text-decoration: none;
 }
 
 .header-bottom-row {
@@ -111,6 +138,7 @@
     .header-nav ul,
     .social-icons {
         justify-content: center;
+        align-items: center;
     }
 
     .header-nav{

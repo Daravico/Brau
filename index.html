@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/semblanza.css">
     <link rel="stylesheet" href="css/plan-de-trabajo.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/popup.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,10 +41,11 @@
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="#">
+                <a href="https://www.instagram.com/agustinbrau.fii/?utm_source=ig_web_button_share_sheet">
                     <img src="assets/images/icons/instagram.png" alt="Instagram">
+                    <p>@agustin.fii</p>
                 </a>
-                <!-- <p class="">Instagram</p> -->
+
             </div>
         </div>
 
@@ -79,6 +82,12 @@
                         Nacional de Investigadoras e Investigadores Nivel I, y con una sólida trayectoria de más de una
                         década al servicio de la educación superior en el Noroeste del país.
                     </p>
+
+                    <div class="semblanza-btn-container">
+                        <button class="semblanza-button" id="show-popup-btn">
+                            Ver video
+                        </button>
+                    </div>
                 </div>
 
                 <div class="semblanza-photo">
@@ -369,17 +378,19 @@
             <div class="contacto-single-column">
 
                 <div class="contact-email">
-                    <h3>Envía un mensaje</h3>
-                    <p>Puedes enviarnos un correo electrónico directamente a:</p>
+                    <h3>Tu opinión es importante, <br>¡Envía un mensaje!</h3>
+                    <p>Puedes enviar un correo electrónico directamente a:</p>
                     <a href="mailto:correo@tupagina.com" class="email-link">agustin.brau@unison.mx</a>
                 </div>
 
                 <div class="contact-social">
-                    <h3>Síguenos en redes</h3>
+                    <h3>¡Conoce más en Instagram!</h3>
                     <div class="social-icons-contact">
-                        <a href="#"><img src="assets/images/icons/instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="assets/images/icons/facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter"></a>
+                        <a class="social-tag"
+                            href="https://www.instagram.com/agustinbrau.fii/?utm_source=ig_web_button_share_sheet">
+                            <img src="assets/images/icons/instagram_yellow.png" alt="Instagram">
+                            <p class="social">@agustinbrau.fii</p>
+                        </a>
                     </div>
                 </div>
 
@@ -391,9 +402,20 @@
     <footer>
     </footer>
 
+    <div class="popup-overlay" id="video-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup-btn">&times;</span>
+            <video id="popup-video" controls autoplay>
+                <source src="assets/videos/video_promo.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/acordeon.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

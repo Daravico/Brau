@@ -40,11 +40,38 @@
 .social-icons-contact {
     display: flex;
     justify-content: center; 
+    align-items: center;
     gap: 20px;
     margin-top: 20px;
+    height: 100px;
 }
 
 .social-icons-contact img {
     height: 40px;
     width: auto;
+}
+
+.social{
+    color: #f7a01d;
+    align-items: center;
+    font-weight: bold;
+}
+
+.social-tag{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #0d2c6c;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-tag:hover{
+    transform: scale(1.05);
+    background-color: #051d4e; 
 }

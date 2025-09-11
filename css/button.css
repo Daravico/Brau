@@ -1,0 +1,26 @@
+.semblanza-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.semblanza-button {
+    background-color: #f7a01d;
+    color: #0d2c6c;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
+    background: transparent
+}
+
+.semblanza-button:hover {
+    background-color: #f09516;
+}
