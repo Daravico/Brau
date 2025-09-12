@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para mostrar el pop-up
     function showPopup() {
         popupOverlay.style.display = 'flex';
+        // Reproducir el video solo cuando el usuario hace clic
         videoElement.play();
     }
 
@@ -16,9 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         videoElement.pause();
         videoElement.currentTime = 0; // Reinicia el video al principio
     }
-
-    // Mostrar el pop-up automáticamente al cargar la página
-    showPopup();
 
     // Evento para cerrar el pop-up
     closeBtn.addEventListener('click', hidePopup);
